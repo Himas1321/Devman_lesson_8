@@ -6,4 +6,8 @@ with open("file/coffee.json", "r", encoding="CP1251") as coffee:
 
 file_coffee = json.loads(coffee_json)
 
-print(type(file_coffee))
+# print(file_coffee)
+# print(file_coffee["Name"])
+first = file_coffee[0]
+first_a = first['Name']
+print(first_a) 
