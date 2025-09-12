@@ -15,9 +15,3 @@ for cafe in file_coffee:
 
 coordinates = file_coffee[0]['geoData']['coordinates']
 
-
-
-# print(coffee_shop, '\n', coordinates[0], '\n', coordinates[1])
-# print(coordinates[0])
-# print(coordinates[1])
-# print(coffee_shop,'\n', coordinates)
