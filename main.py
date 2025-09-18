@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 import json
 import requests
 from geopy import distance
-from pprint import pprint
 import folium
 
 
@@ -56,7 +55,7 @@ def main():
 	coffeeshop_min = sorted(coffeeshop_list, key=get_coffeeshop_distance)[:5]
 	
 	m = folium.Map([coords[1], coords[0]], zoom_start=12)
-
+	
 	folium.Marker(
 		location=[coords[1], coords[0]],
 		tooltip="Нажми меня!",
@@ -73,7 +72,6 @@ def main():
         ).add_to(m)
 
 	m.save('index.html')
-	pprint(coffeeshop_min)
 
 
 if __name__ == '__main__':
